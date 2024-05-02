@@ -12,14 +12,9 @@ public class Ejecutor {
         FacturaTelefonica fac = new FacturaTelefonica();
         // se llama al método que calcula el valor de la factura
         fac.calcularValorFactura(); 
-        System.out.println("Objeto sin argumentos\n");
-        System.out.printf("Número telefónico: %s\n"
-                + "Minutos mes: %.2f\nValor minuto: %.2f\n"
-                + "Valor factura: %.2f\n", fac.obtenerNumeroTelefono(),
-                fac.obtenerMinutosMes(),
-                fac.obtenerValorMinuto(),
-                fac.obtenerValorFactura());
         
+        System.out.printf("%s\n", fac);
+        /*
         // Se crea un objeto haciendo referencia al constructor 
         // con argumentos de la clase
         String numero = "123456789";
@@ -36,6 +31,6 @@ public class Ejecutor {
                 + "Valor factura: %.2f\n", fac2.obtenerNumeroTelefono(),
                 fac2.obtenerMinutosMes(),
                 fac2.obtenerValorMinuto(),
-                fac2.obtenerValorFactura());
+                fac2.obtenerValorFactura());*/
     }
 }

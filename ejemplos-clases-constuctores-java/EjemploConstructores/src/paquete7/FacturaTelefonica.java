@@ -5,6 +5,8 @@
  */
 package paquete7;
 
+import com.sun.org.apache.xml.internal.serializer.ToStream;
+
 public class FacturaTelefonica {
 
     private String numeroTelefono;
@@ -60,5 +62,15 @@ public class FacturaTelefonica {
     public double obtenerValorFactura() {
         return valorFactura;
     }
-
+    @Override
+    public String toString(){
+        String cadena = String.format("Objeto sin argumentos\n"
+                +"Número telefónico: %s\n"
+                + "Minutos mes: %.2f\nValor minuto: %.2f\n"
+                + "Valor factura: %.2f\n", obtenerNumeroTelefono()
+                , obtenerMinutosMes(), obtenerValorMinuto()
+                , obtenerValorFactura());
+        return cadena;
+    
+    }
 }
