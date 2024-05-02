@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete2;
+package paquete3;
+
 
 /**
  *
@@ -21,8 +22,6 @@ public class Ejecutor {
         h1.establecerNombre("Hospital Militar Privado");
         
         Hospital h2 = new Hospital("Militar DOS", "Loja", 1000, 3000);
-        
-        h2.establecerNombre("Hospital dos");
         
         System.out.printf("%s\n", h1);
         System.out.printf("%s\n", h2);
